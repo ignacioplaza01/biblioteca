@@ -31,3 +31,5 @@ def mostrarInfo(request,id):
 
     libros = get_object_or_404(Libros,pk=id)
     return render(request, 'mostrarInfo/mostrarInfo.html',{"Libro":libros})  
+
+    
