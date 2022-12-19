@@ -62,13 +62,14 @@
         <tbody>
             {% for a in Libro %}
             <tr>
+                <td scope="row">{{ a.id }}</td>
                 <td><img src="/media/{{ a.Img }}" alt="" width="100"></td>
                 <td>{{ a.Titulo }}</td>
                 <td>{{ a.Autor }}</td>
                 <td>{{ a.Genero }}</td>
                 <td>{{ a.Calificacion }}</td>
                 
-                <td><a href="/actualizarRopa/{{ a.id }}" class="btn btn-success btn-sm"><i class="bi bi-pencil"></i>Ver libro</td>
+                <td><a href="/mostrarInfo/{{ a.id }}" class="btn btn-success btn-sm"><i class="bi bi-pencil"></i>Ver libro</td>
                 
             </tr>
             {% endfor %}
